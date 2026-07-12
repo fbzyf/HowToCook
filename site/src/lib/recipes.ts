@@ -6,11 +6,11 @@ import {
   getCategoryFromPath,
   type CategorySlug,
 } from './categories';
+import { withBasePath } from './paths';
 
 const SITE_DIR = path.resolve(process.cwd());
 const ROOT_DIR = path.resolve(SITE_DIR, '..');
 const DISHES_DIR = path.join(ROOT_DIR, 'dishes');
-const PUBLIC_ASSETS = path.join(SITE_DIR, 'public/assets');
 
 export interface Recipe {
   slug: string;
@@ -92,29 +92,18 @@ function slugify(filePath: string, category: CategorySlug): string {
   return relative.split(path.sep).join('/');
 }
 
-function ensurePublicDir(relativePath: string): string {
-  const destDir = path.dirname(path.join(PUBLIC_ASSETS, relativePath));
-  fs.mkdirSync(destDir, { recursive: true });
-  return path.join(PUBLIC_ASSETS, relativePath);
-}
-
-function copyImageIfExists(sourcePath: string, publicRelativePath: string): string | null {
-  if (!fs.existsSync(sourcePath)) return null;
-
-  const destPath = ensurePublicDir(publicRelativePath);
-  if (!fs.existsSync(destPath)) {
-    fs.copyFileSync(sourcePath, destPath);
-  }
-
-  return `/assets/${publicRelativePath.split(path.sep).join('/')}`;
+function toAssetUrl(publicRelativePath: string): string {
+  const assetPath = `/assets/${publicRelativePath.split(path.sep).join('/')}`;
+  return withBasePath(assetPath);
 }
 
 function resolveImagePath(markdownDir: string, imageRef: string, dishRelativePath: string): string | null {
   const cleaned = imageRef.replace(/^\.\//, '');
   const sourcePath = path.resolve(markdownDir, cleaned);
-  const publicRelative = path.join('dishes', dishRelativePath, cleaned);
+  if (!fs.existsSync(sourcePath)) return null;
 
-  return copyImageIfExists(sourcePath, publicRelative);
+  const publicRelative = path.join('dishes', dishRelativePath, cleaned);
+  return toAssetUrl(publicRelative);
 }
 
 function findCoverImage(markdownDir: string, dishRelativePath: string): string | null {
@@ -124,9 +113,11 @@ function findCoverImage(markdownDir: string, dishRelativePath: string): string |
     const ext = path.extname(entry);
     if (!IMAGE_EXTENSIONS.has(ext)) continue;
 
+    const sourcePath = path.join(markdownDir, entry);
+    if (!fs.existsSync(sourcePath)) continue;
+
     const publicRelative = path.join('dishes', dishRelativePath, entry);
-    const copied = copyImageIfExists(path.join(markdownDir, entry), publicRelative);
-    if (copied) return copied;
+    return toAssetUrl(publicRelative);
   }
 
   return null;

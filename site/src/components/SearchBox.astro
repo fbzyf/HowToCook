@@ -1,4 +1,6 @@
 ---
+import { withBase } from '../lib/paths';
+
 interface Props {
   autofocus?: boolean;
   showResults?: boolean;
@@ -12,7 +14,7 @@ const {
 } = Astro.props;
 ---
 
-<form class="search-box" action="/search" method="get" role="search">
+<form class="search-box" action={withBase('search')} method="get" role="search">
   <span class="search-icon" aria-hidden="true">🔍</span>
   <input
     type="search"
@@ -29,7 +31,7 @@ const {
 
 <script>
   const form = document.querySelector('.search-box');
-  const onSearchPage = window.location.pathname === '/search';
+  const onSearchPage = window.location.pathname.endsWith('/search') || window.location.pathname.endsWith('/search/');
 
   form?.addEventListener('submit', (event) => {
     if (!onSearchPage) return;

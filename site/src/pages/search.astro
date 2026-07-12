@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SearchBox from '../components/SearchBox.astro';
+import { withBase } from '../lib/paths';
 import { getAllRecipes } from '../lib/recipes';
 import { getAllTips } from '../lib/tips';
 
@@ -8,7 +9,7 @@ const recipes = getAllRecipes().map((recipe) => ({
   type: 'recipe' as const,
   name: recipe.name,
   category: recipe.categoryTitle,
-  href: `/recipes/${recipe.category}/${recipe.slug}`,
+  href: withBase(`recipes/${recipe.category}/${recipe.slug}`),
   description: recipe.description,
   searchText: recipe.searchText,
 }));
@@ -17,7 +18,7 @@ const tips = getAllTips().map((tip) => ({
   type: 'tip' as const,
   name: tip.title,
   category: tip.groupTitle,
-  href: `/tips/${tip.slug}`,
+  href: withBase(`tips/${tip.slug}`),
   description: '',
   searchText: tip.searchText,
 }));

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import RecipeCard from '../components/RecipeCard.astro';
 import SearchBox from '../components/SearchBox.astro';
+import { withBase } from '../lib/paths';
 import { CATEGORIES, type CategorySlug } from '../lib/categories';
 import { getAllRecipes, getRecipeStats } from '../lib/recipes';
 
@@ -42,7 +43,7 @@ const featured = getAllRecipes()
         ))}
       </div>
       <p class="section-more">
-        <a href="/recipes">查看全部菜谱 →</a>
+        <a href={withBase('recipes')}>查看全部菜谱 →</a>
       </p>
     </section>
   )}

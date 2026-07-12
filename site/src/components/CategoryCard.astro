@@ -1,5 +1,6 @@
 ---
 import { CATEGORIES, type CategorySlug } from '../lib/categories';
+import { withBase } from '../lib/paths';
 
 interface Props {
   slug: CategorySlug;
@@ -10,7 +11,7 @@ const { slug, count } = Astro.props;
 const category = CATEGORIES[slug];
 ---
 
-<a href={`/recipes/${slug}`} class="category-card card">
+<a href={withBase(`recipes/${slug}`)} class="category-card card">
   <span class="category-icon">{category.icon}</span>
   <span class="category-title">{category.title}</span>
   <span class="category-count">{count} 道菜</span>

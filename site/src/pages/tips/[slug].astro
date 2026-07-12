@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { withBase } from '../../lib/paths';
 import { getAllTips, getTipBySlug } from '../../lib/tips';
 
 export function getStaticPaths() {
@@ -19,9 +20,9 @@ if (!tip) {
 <Layout title={tip.title} description={`${tip.groupTitle} — ${tip.title}`}>
   <article class="container tip-page">
     <nav class="breadcrumb">
-      <a href="/">首页</a>
+      <a href={withBase('')}>首页</a>
       <span class="breadcrumb-sep">/</span>
-      <a href="/tips">烹饪技巧</a>
+      <a href={withBase('tips')}>烹饪技巧</a>
       <span class="breadcrumb-sep">/</span>
       <span>{tip.title}</span>
     </nav>

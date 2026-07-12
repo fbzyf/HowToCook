@@ -1,15 +1,17 @@
 ---
+import { withBase } from '../lib/paths';
+
 const navLinks = [
-  { href: '/', label: '首页' },
-  { href: '/recipes', label: '全部菜谱' },
-  { href: '/tips', label: '烹饪技巧' },
-  { href: '/search', label: '搜索' },
+  { href: withBase(''), label: '首页' },
+  { href: withBase('recipes'), label: '全部菜谱' },
+  { href: withBase('tips'), label: '烹饪技巧' },
+  { href: withBase('search'), label: '搜索' },
 ];
 ---
 
 <header class="header">
   <div class="container header-inner">
-    <a href="/" class="logo">
+    <a href={withBase('')} class="logo">
       <span class="logo-icon">🍳</span>
       <span class="logo-text">程序员做饭指南</span>
     </a>

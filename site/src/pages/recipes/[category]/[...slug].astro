@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { withBase } from '../../../lib/paths';
 import { CATEGORIES, type CategorySlug } from '../../../lib/categories';
 import { getAllRecipes, getRecipeBySlug } from '../../../lib/recipes';
 
@@ -27,11 +28,11 @@ const categoryInfo = CATEGORIES[recipe.category as CategorySlug];
 <Layout title={recipe.name} description={recipe.description || `${recipe.name}的做法`}>
   <article class="container recipe-page">
     <nav class="breadcrumb">
-      <a href="/">首页</a>
+      <a href={withBase('')}>首页</a>
       <span class="breadcrumb-sep">/</span>
-      <a href="/recipes">全部菜谱</a>
+      <a href={withBase('recipes')}>全部菜谱</a>
       <span class="breadcrumb-sep">/</span>
-      <a href={`/recipes/${recipe.category}`}>{categoryInfo.title}</a>
+      <a href={withBase(`recipes/${recipe.category}`)}>{categoryInfo.title}</a>
       <span class="breadcrumb-sep">/</span>
       <span>{recipe.name}</span>
     </nav>

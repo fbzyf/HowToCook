@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { withBase } from '../../lib/paths';
 import { getAllTips, getTipsByGroup } from '../../lib/tips';
 
 const tips = getAllTips();
@@ -26,7 +27,7 @@ const groups = [
           <h2 class="section-title">{group.icon} {group.title}</h2>
           <div class="tip-list">
             {groupTips.map((tip) => (
-              <a href={`/tips/${tip.slug}`} class="tip-card card">
+              <a href={withBase(`tips/${tip.slug}`)} class="tip-card card">
                 <span class="tip-title">{tip.title}</span>
                 <span class="tip-arrow">→</span>
               </a>

@@ -1,12 +1,13 @@
 ---
 import type { Recipe } from '../lib/recipes';
+import { withBase } from '../lib/paths';
 
 interface Props {
   recipe: Recipe;
 }
 
 const { recipe } = Astro.props;
-const href = `/recipes/${recipe.category}/${recipe.slug}`;
+const href = withBase(`recipes/${recipe.category}/${recipe.slug}`);
 ---
 
 <article class="card">
