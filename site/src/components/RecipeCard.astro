@@ -1,0 +1,47 @@
+---
+import type { Recipe } from '../lib/recipes';
+
+interface Props {
+  recipe: Recipe;
+}
+
+const { recipe } = Astro.props;
+const href = `/recipes/${recipe.category}/${recipe.slug}`;
+---
+
+<article class="card">
+  <a href={href} class="card-link">
+    <div class="card-image">
+      {recipe.coverImage ? (
+        <img src={recipe.coverImage} alt={recipe.name} loading="lazy" />
+      ) : (
+        <div class="card-image-placeholder">🍽️</div>
+      )}
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">{recipe.name}</h3>
+      <div class="card-meta">
+        <span class="badge badge-primary">{recipe.categoryTitle}</span>
+        {recipe.difficulty > 0 && (
+          <span class="stars" title={`难度 ${recipe.difficulty} 星`}>
+            {'★'.repeat(recipe.difficulty)}{'☆'.repeat(5 - recipe.difficulty)}
+          </span>
+        )}
+        {recipe.calories && <span class="badge">{recipe.calories} 大卡</span>}
+      </div>
+      {recipe.description && <p class="card-desc">{recipe.description}</p>}
+    </div>
+  </a>
+</article>
+
+<style>
+  .card-desc {
+    margin: 0.6rem 0 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

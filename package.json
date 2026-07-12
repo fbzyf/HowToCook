@@ -15,6 +15,8 @@
   ],
   "scripts": {
     "build": "node ./.github/readme-generate.js",
+    "build:site": "npm run build --prefix site",
+    "dev:site": "npm run dev --prefix site",
     "manuallint": "node .github/manual_lint.js",
     "textlint": "textlint . --fix",
     "markdownlint": "markdownlint ./dishes ./tips",

@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAllTips, getTipsByGroup } from '../../lib/tips';
+
+const tips = getAllTips();
+const groups = [
+  { key: 'basics' as const, title: '厨房基础', icon: '🏠' },
+  { key: 'learn' as const, title: '烹饪技法', icon: '📖' },
+  { key: 'advanced' as const, title: '进阶技巧', icon: '🎓' },
+];
+---
+
+<Layout title="烹饪技巧" description="厨房准备与烹饪技法指南">
+  <div class="container">
+    <header class="page-header">
+      <h1>烹饪技巧</h1>
+      <p>共 {tips.length} 篇指南，从厨房准备到进阶技法</p>
+    </header>
+
+    {groups.map((group) => {
+      const groupTips = getTipsByGroup(group.key);
+      if (groupTips.length === 0) return null;
+
+      return (
+        <section class="tip-group">
+          <h2 class="section-title">{group.icon} {group.title}</h2>
+          <div class="tip-list">
+            {groupTips.map((tip) => (
+              <a href={`/tips/${tip.slug}`} class="tip-card card">
+                <span class="tip-title">{tip.title}</span>
+                <span class="tip-arrow">→</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      );
+    })}
+  </div>
+</Layout>
+
+<style>
+  .tip-group {
+    margin-bottom: 2rem;
+  }
+
+  .tip-list {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .tip-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    color: inherit;
+    transition: border-color 0.2s;
+  }
+
+  .tip-card:hover {
+    color: inherit;
+    border-color: var(--color-primary);
+  }
+
+  .tip-title {
+    font-family: var(--font-serif);
+    font-weight: 500;
+  }
+
+  .tip-arrow {
+    color: var(--color-text-muted);
+    transition: transform 0.2s;
+  }
+
+  .tip-card:hover .tip-arrow {
+    transform: translateX(4px);
+    color: var(--color-primary);
+  }
+</style>

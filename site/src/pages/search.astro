@@ -1,0 +1,146 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SearchBox from '../components/SearchBox.astro';
+import { getAllRecipes } from '../lib/recipes';
+import { getAllTips } from '../lib/tips';
+
+const recipes = getAllRecipes().map((recipe) => ({
+  type: 'recipe' as const,
+  name: recipe.name,
+  category: recipe.categoryTitle,
+  href: `/recipes/${recipe.category}/${recipe.slug}`,
+  description: recipe.description,
+  searchText: recipe.searchText,
+}));
+
+const tips = getAllTips().map((tip) => ({
+  type: 'tip' as const,
+  name: tip.title,
+  category: tip.groupTitle,
+  href: `/tips/${tip.slug}`,
+  description: '',
+  searchText: tip.searchText,
+}));
+
+const searchIndex = [...recipes, ...tips];
+---
+
+<Layout title="搜索" description="搜索菜谱与烹饪技巧">
+  <div class="container search-page">
+    <header class="page-header">
+      <h1>搜索菜谱</h1>
+      <p>输入菜名或关键词，快速找到你想做的菜</p>
+    </header>
+
+    <SearchBox autofocus showResults />
+
+    <script define:vars={{ searchIndex }}>
+      const input = document.getElementById('search-input');
+      const resultsEl = document.getElementById('search-results');
+
+      function renderResults(query) {
+        if (!resultsEl) return;
+
+        const q = query.trim().toLowerCase();
+        if (!q) {
+          resultsEl.innerHTML = '<p class="search-hint">输入关键词开始搜索</p>';
+          return;
+        }
+
+        const matches = searchIndex
+          .filter((item) => item.searchText.includes(q) || item.name.toLowerCase().includes(q))
+          .slice(0, 30);
+
+        if (matches.length === 0) {
+          resultsEl.innerHTML = '<p class="search-hint">没有找到匹配的结果</p>';
+          return;
+        }
+
+        resultsEl.innerHTML = matches
+          .map(
+            (item) => `
+            <a href="${item.href}" class="search-result card">
+              <div class="search-result-body">
+                <span class="search-result-type">${item.type === 'recipe' ? '🍳 菜谱' : '📖 技巧'}</span>
+                <span class="search-result-name">${item.name}</span>
+                <span class="search-result-category">${item.category}</span>
+              </div>
+              ${item.description ? `<p class="search-result-desc">${item.description}</p>` : ''}
+            </a>
+          `,
+          )
+          .join('');
+      }
+
+      input?.addEventListener('input', (event) => {
+        renderResults(event.target.value);
+      });
+
+      const params = new URLSearchParams(window.location.search);
+      const initialQuery = params.get('q') || '';
+      if (input && initialQuery) {
+        input.value = initialQuery;
+        renderResults(initialQuery);
+      } else {
+        renderResults('');
+      }
+    </script>
+  </div>
+</Layout>
+
+<style>
+  .search-page {
+    padding-bottom: 3rem;
+    max-width: 720px;
+  }
+
+  :global(.search-hint) {
+    text-align: center;
+    color: var(--color-text-muted);
+    padding: 2rem 0;
+  }
+
+  :global(.search-result) {
+    display: block;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    color: inherit;
+  }
+
+  :global(.search-result:hover) {
+    color: inherit;
+    border-color: var(--color-primary);
+  }
+
+  :global(.search-result-body) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  :global(.search-result-type) {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+
+  :global(.search-result-name) {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+
+  :global(.search-result-category) {
+    font-size: 0.82rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: var(--color-bg-muted);
+    color: var(--color-text-muted);
+  }
+
+  :global(.search-result-desc) {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+</style>

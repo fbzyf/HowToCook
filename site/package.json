@@ -1,0 +1,24 @@
+{
+  "name": "howtocook-site",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "程序员做饭指南 — 精美静态网站",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.0.7",
+    "glob": "^13.0.6",
+    "marked": "^18.0.6"
+  },
+  "devDependencies": {
+    "@types/marked": "^5.0.2",
+    "pagefind": "^1.5.2"
+  }
+}

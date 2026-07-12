@@ -1,0 +1,66 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { CATEGORIES, type CategorySlug } from '../../../lib/categories';
+import { getAllRecipes, getRecipeBySlug } from '../../../lib/recipes';
+
+export function getStaticPaths() {
+  return getAllRecipes().map((recipe) => ({
+    params: {
+      category: recipe.category,
+      slug: recipe.slug,
+    },
+  }));
+}
+
+const { category } = Astro.params as { category: CategorySlug; slug: string | string[] };
+const slugParam = Astro.params.slug;
+const slug = Array.isArray(slugParam) ? slugParam.join('/') : slugParam;
+const recipe = getRecipeBySlug(category, slug);
+
+if (!recipe) {
+  return Astro.redirect('/404');
+}
+
+const categoryInfo = CATEGORIES[recipe.category as CategorySlug];
+---
+
+<Layout title={recipe.name} description={recipe.description || `${recipe.name}的做法`}>
+  <article class="container recipe-page">
+    <nav class="breadcrumb">
+      <a href="/">首页</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="/recipes">全部菜谱</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href={`/recipes/${recipe.category}`}>{categoryInfo.title}</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>{recipe.name}</span>
+    </nav>
+
+    <header class="recipe-hero">
+      <h1>{recipe.name}</h1>
+      <div class="recipe-hero-meta">
+        <span class="badge badge-primary">{recipe.categoryTitle}</span>
+        {recipe.difficulty > 0 && (
+          <span class="badge">
+            难度 <span class="stars">{'★'.repeat(recipe.difficulty)}</span>
+          </span>
+        )}
+        {recipe.calories && <span class="badge badge-accent">{recipe.calories} 大卡/份</span>}
+      </div>
+    </header>
+
+    {recipe.coverImage && (
+      <div class="recipe-cover">
+        <img src={recipe.coverImage} alt={`${recipe.name}成品`} />
+      </div>
+    )}
+
+    <div class="prose" set:html={recipe.contentHtml} />
+  </article>
+</Layout>
+
+<style>
+  .recipe-page {
+    padding-bottom: 3rem;
+  }
+</style>

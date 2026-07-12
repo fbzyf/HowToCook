@@ -1,0 +1,84 @@
+---
+interface Props {
+  autofocus?: boolean;
+  showResults?: boolean;
+  placeholder?: string;
+}
+
+const {
+  autofocus = false,
+  showResults = false,
+  placeholder = '搜索菜谱，例如：西红柿炒鸡蛋',
+} = Astro.props;
+---
+
+<form class="search-box" action="/search" method="get" role="search">
+  <span class="search-icon" aria-hidden="true">🔍</span>
+  <input
+    type="search"
+    name="q"
+    id="search-input"
+    class="search-input"
+    placeholder={placeholder}
+    autocomplete="off"
+    autofocus={autofocus}
+  />
+</form>
+
+{showResults && <div id="search-results" class="search-results"></div>}
+
+<script>
+  const form = document.querySelector('.search-box');
+  const onSearchPage = window.location.pathname === '/search';
+
+  form?.addEventListener('submit', (event) => {
+    if (!onSearchPage) return;
+    event.preventDefault();
+    const input = document.getElementById('search-input');
+    input?.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+</script>
+
+<style>
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0.75rem 1.25rem;
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border);
+    border-radius: 999px;
+    box-shadow: 0 4px 16px var(--color-shadow);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .search-box:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 20px color-mix(in srgb, var(--color-primary) 15%, transparent);
+  }
+
+  .search-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    color: var(--color-text);
+  }
+
+  .search-input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .search-results {
+    margin-top: 2rem;
+  }
+</style>
