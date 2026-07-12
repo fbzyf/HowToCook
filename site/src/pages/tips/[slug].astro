@@ -9,11 +9,12 @@ export function getStaticPaths() {
   }));
 }
 
-const { slug } = Astro.props;
-const tip = getTipBySlug(slug);
+const { slug } = Astro.params;
+
+const tip = getTipBySlug(slug ?? '');
 
 if (!tip) {
-  return Astro.redirect('/tips');
+  return Astro.redirect(withBase('tips'));
 }
 ---
 
