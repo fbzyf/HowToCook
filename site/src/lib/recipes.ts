@@ -12,6 +12,7 @@ import {
   parseMarkdownImages,
 } from './image-utils';
 import { withBasePath } from './paths';
+import { buildSearchText, markdownToSearchText } from './search-text';
 
 const SITE_DIR = path.resolve(process.cwd());
 const ROOT_DIR = path.resolve(SITE_DIR, '..');
@@ -222,6 +223,8 @@ function parseRecipe(filePath: string): Recipe | null {
     firstImage ?? findCoverImage(markdownDir, dishRelativePath, name, filePath);
   const contentHtml = marked.parse(rewritten, { async: false }) as string;
 
+  const description = parseDescription(raw);
+
   return {
     slug: slugify(filePath, category),
     name,
@@ -229,11 +232,16 @@ function parseRecipe(filePath: string): Recipe | null {
     categoryTitle: CATEGORIES[category].title,
     difficulty: parseDifficulty(raw),
     calories: parseCalories(raw),
-    description: parseDescription(raw),
+    description,
     coverImage,
     filePath,
     contentHtml,
-    searchText: `${name} ${CATEGORIES[category].title} ${parseDescription(raw)}`.toLowerCase(),
+    searchText: buildSearchText(
+      name,
+      CATEGORIES[category].title,
+      description,
+      markdownToSearchText(raw),
+    ),
   };
 }
 
