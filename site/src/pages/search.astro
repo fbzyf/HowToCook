@@ -24,18 +24,19 @@ const tips = getAllTips().map((tip) => ({
 }));
 
 const searchIndex = [...recipes, ...tips];
+const recipeCount = recipes.length;
 ---
 
 <Layout title="搜索" description="搜索菜谱与烹饪技巧">
   <div class="container search-page">
     <header class="page-header">
       <h1>搜索菜谱</h1>
-      <p>输入菜名或关键词，快速找到你想做的菜</p>
+      <p>输入菜名、原料或关键词，在 {recipeCount} 道菜谱与 {tips.length} 篇技巧中查找</p>
     </header>
 
     <SearchBox autofocus showResults />
 
-    <script define:vars={{ searchIndex }}>
+    <script define:vars={{ searchIndex, recipeCount }}>
       const input = document.getElementById('search-input');
       const resultsEl = document.getElementById('search-results');
 
@@ -53,7 +54,9 @@ const searchIndex = [...recipes, ...tips];
           .slice(0, 30);
 
         if (matches.length === 0) {
-          resultsEl.innerHTML = '<p class="search-hint">没有找到匹配的结果</p>';
+          resultsEl.innerHTML =
+            '<p class="search-hint">没有找到匹配的结果</p>' +
+            `<p class="search-hint">本站仅搜索已收录的 ${recipeCount} 道菜谱，可尝试原料名（如：鲈鱼、豆腐、鸡蛋），或浏览分类列表</p>`;
           return;
         }
 

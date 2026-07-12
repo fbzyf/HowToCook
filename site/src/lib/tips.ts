@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { marked } from 'marked';
+import { buildSearchText, markdownToSearchText } from './search-text';
 
 const SITE_DIR = path.resolve(process.cwd());
 const ROOT_DIR = path.resolve(SITE_DIR, '..');
@@ -36,7 +37,7 @@ function parseTipFile(filePath: string, group: TipGroup): TipArticle {
     groupTitle: GROUP_LABELS[group],
     filePath,
     contentHtml,
-    searchText: `${title} ${GROUP_LABELS[group]}`.toLowerCase(),
+    searchText: buildSearchText(title, GROUP_LABELS[group], markdownToSearchText(raw)),
   };
 }
 
