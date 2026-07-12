@@ -124,12 +124,13 @@ function findCoverImage(markdownDir: string, dishRelativePath: string): string |
 }
 
 function rewriteMarkdownImages(content: string, markdownDir: string, dishRelativePath: string): string {
-  return content.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_match, alt, imageRef) => {
-    if (imageRef.startsWith('http://') || imageRef.startsWith('https://')) {
-      return `![${alt}](${imageRef})`;
+  return content.replace(/!\[([^\]]*)\]\((.+?)\)/g, (_match, alt, imageRef) => {
+    const trimmedRef = imageRef.trim();
+    if (trimmedRef.startsWith('http://') || trimmedRef.startsWith('https://')) {
+      return `![${alt}](${trimmedRef})`;
     }
 
-    const publicUrl = resolveImagePath(markdownDir, imageRef, dishRelativePath);
+    const publicUrl = resolveImagePath(markdownDir, trimmedRef, dishRelativePath);
     if (!publicUrl) return '';
 
     return `![${alt}](${publicUrl})`;
