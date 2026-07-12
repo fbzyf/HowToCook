@@ -6,6 +6,11 @@ import {
   getCategoryFromPath,
   type CategorySlug,
 } from './categories';
+import {
+  isValidImageFile,
+  listValidImagesInDir,
+  parseMarkdownImages,
+} from './image-utils';
 import { withBasePath } from './paths';
 
 const SITE_DIR = path.resolve(process.cwd());
@@ -25,8 +30,6 @@ export interface Recipe {
   contentHtml: string;
   searchText: string;
 }
-
-const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.JPG', '.JPEG', '.PNG']);
 
 function walkMarkdownFiles(dir: string, results: string[] = []): string[] {
   if (!fs.existsSync(dir)) return results;
@@ -97,44 +100,113 @@ function toAssetUrl(publicRelativePath: string): string {
   return withBasePath(assetPath);
 }
 
-function resolveImagePath(markdownDir: string, imageRef: string, dishRelativePath: string): string | null {
+function resolveLocalImageUrl(
+  markdownDir: string,
+  imageRef: string,
+  dishRelativePath: string,
+): string | null {
   const cleaned = imageRef.replace(/^\.\//, '');
   const sourcePath = path.resolve(markdownDir, cleaned);
-  if (!fs.existsSync(sourcePath)) return null;
+  if (!isValidImageFile(sourcePath)) return null;
 
   const publicRelative = path.join('dishes', dishRelativePath, cleaned);
   return toAssetUrl(publicRelative);
 }
 
-function findCoverImage(markdownDir: string, dishRelativePath: string): string | null {
-  if (!fs.existsSync(markdownDir)) return null;
+function resolveImageReference(
+  markdownDir: string,
+  imageRef: string,
+  dishRelativePath: string,
+): string | null {
+  const trimmedRef = imageRef.trim();
 
-  for (const entry of fs.readdirSync(markdownDir)) {
-    const ext = path.extname(entry);
-    if (!IMAGE_EXTENSIONS.has(ext)) continue;
+  if (trimmedRef.startsWith('http://') || trimmedRef.startsWith('https://')) {
+    return trimmedRef;
+  }
 
-    const sourcePath = path.join(markdownDir, entry);
-    if (!fs.existsSync(sourcePath)) continue;
+  return resolveLocalImageUrl(markdownDir, trimmedRef, dishRelativePath);
+}
 
-    const publicRelative = path.join('dishes', dishRelativePath, entry);
-    return toAssetUrl(publicRelative);
+function findCoverImage(
+  markdownDir: string,
+  dishRelativePath: string,
+  recipeName: string,
+  filePath: string,
+): string | null {
+  const fileBase = path.basename(filePath, '.md');
+  const slugFolder = path.basename(markdownDir);
+  const searchDirs = [
+    markdownDir,
+    path.join(markdownDir, recipeName),
+    path.join(markdownDir, fileBase),
+    path.join(path.dirname(markdownDir), recipeName),
+    path.join(path.dirname(markdownDir), fileBase),
+  ];
+
+  const uniqueDirs = [...new Set(searchDirs)].filter((dir) => fs.existsSync(dir));
+
+  const preferredNames = [
+    recipeName,
+    fileBase,
+    slugFolder,
+    `${recipeName}成品`,
+    `${fileBase}成品`,
+  ];
+
+  for (const dir of uniqueDirs) {
+    for (const preferred of preferredNames) {
+      for (const ext of ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.JPG', '.JPEG', '.PNG']) {
+        const candidate = path.join(dir, `${preferred}${ext}`);
+        if (isValidImageFile(candidate)) {
+          const relative = path.relative(DISHES_DIR, candidate);
+          return toAssetUrl(path.join('dishes', relative));
+        }
+      }
+    }
+  }
+
+  for (const dir of uniqueDirs) {
+    const images = listValidImagesInDir(dir);
+    if (images.length > 0) {
+      const relative = path.relative(DISHES_DIR, path.join(dir, images[0]));
+      return toAssetUrl(path.join('dishes', relative));
+    }
   }
 
   return null;
 }
 
-function rewriteMarkdownImages(content: string, markdownDir: string, dishRelativePath: string): string {
-  return content.replace(/!\[([^\]]*)\]\((.+?)\)/g, (_match, alt, imageRef) => {
-    const trimmedRef = imageRef.trim();
-    if (trimmedRef.startsWith('http://') || trimmedRef.startsWith('https://')) {
-      return `![${alt}](${trimmedRef})`;
+function rewriteMarkdownImages(
+  content: string,
+  markdownDir: string,
+  dishRelativePath: string,
+): { content: string; firstImage: string | null } {
+  let firstImage: string | null = null;
+
+  const rewritten = content.replace(/!\[([^\]]*)\]\(/g, (match, alt, offset) => {
+    const start = offset + match.length;
+    let depth = 1;
+    let index = start;
+
+    while (index < content.length && depth > 0) {
+      const char = content[index];
+      if (char === '(') depth += 1;
+      else if (char === ')') depth -= 1;
+      index += 1;
     }
 
-    const publicUrl = resolveImagePath(markdownDir, trimmedRef, dishRelativePath);
+    if (depth !== 0) return match;
+
+    const imageRef = content.slice(start, index - 1).trim();
+    const publicUrl = resolveImageReference(markdownDir, imageRef, dishRelativePath);
+
     if (!publicUrl) return '';
 
+    if (!firstImage) firstImage = publicUrl;
     return `![${alt}](${publicUrl})`;
   });
+
+  return { content: rewritten, firstImage };
 }
 
 function parseRecipe(filePath: string): Recipe | null {
@@ -145,12 +217,9 @@ function parseRecipe(filePath: string): Recipe | null {
   const name = parseTitle(raw);
   const markdownDir = path.dirname(filePath);
   const dishRelativePath = path.relative(DISHES_DIR, markdownDir);
-  const rewritten = rewriteMarkdownImages(raw, markdownDir, dishRelativePath);
-  const coverFromMarkdown = rewritten.match(/!\[[^\]]*\]\(([^)]+)\)/);
+  const { content: rewritten, firstImage } = rewriteMarkdownImages(raw, markdownDir, dishRelativePath);
   const coverImage =
-    (coverFromMarkdown?.[1] && !coverFromMarkdown[1].startsWith('http') ? coverFromMarkdown[1] : null) ??
-    findCoverImage(markdownDir, dishRelativePath);
-
+    firstImage ?? findCoverImage(markdownDir, dishRelativePath, name, filePath);
   const contentHtml = marked.parse(rewritten, { async: false }) as string;
 
   return {

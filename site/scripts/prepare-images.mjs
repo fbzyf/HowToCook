@@ -16,10 +16,24 @@ const IMAGE_EXTENSIONS = new Set([
   '.JPG',
   '.JPEG',
   '.PNG',
+  '.WEBP',
 ]);
 
+function isLfsPointer(filePath) {
+  try {
+    return fs.readFileSync(filePath, 'utf8').slice(0, 40).startsWith('version https://git-lfs.github.com');
+  } catch {
+    return false;
+  }
+}
+
+function isValidImage(filePath) {
+  return IMAGE_EXTENSIONS.has(path.extname(filePath)) && !isLfsPointer(filePath);
+}
+
 function copyImages(srcDir, relativeDir = '') {
-  let count = 0;
+  let copied = 0;
+  let skipped = 0;
 
   for (const entry of fs.readdirSync(srcDir)) {
     const srcPath = path.join(srcDir, entry);
@@ -27,21 +41,31 @@ function copyImages(srcDir, relativeDir = '') {
 
     if (fs.statSync(srcPath).isDirectory()) {
       if (entry === 'template') continue;
-      count += copyImages(srcPath, nextRelative);
+      const result = copyImages(srcPath, nextRelative);
+      copied += result.copied;
+      skipped += result.skipped;
       continue;
     }
 
     if (!IMAGE_EXTENSIONS.has(path.extname(entry))) continue;
 
+    if (!isValidImage(srcPath)) {
+      skipped += 1;
+      continue;
+    }
+
     const destPath = path.join(DEST_DIR, nextRelative);
     fs.mkdirSync(path.dirname(destPath), { recursive: true });
     fs.copyFileSync(srcPath, destPath);
-    count += 1;
+    copied += 1;
   }
 
-  return count;
+  return { copied, skipped };
 }
 
 fs.rmSync(DEST_DIR, { recursive: true, force: true });
-const total = copyImages(DISHES_DIR);
-console.log(`Prepared ${total} recipe images into public/assets/dishes`);
+const { copied, skipped } = copyImages(DISHES_DIR);
+console.log(`Prepared ${copied} recipe images into public/assets/dishes`);
+if (skipped > 0) {
+  console.warn(`Skipped ${skipped} invalid or Git LFS pointer image files`);
+}
