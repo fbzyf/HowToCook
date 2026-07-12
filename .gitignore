@@ -2,7 +2,9 @@
 node_modules/
 .history
 .DS_Store
-site/
+site/node_modules/
+site/dist/
+site/.astro/
 starsystem/
 properdocs.yml
 

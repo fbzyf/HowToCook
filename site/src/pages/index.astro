@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import SearchBox from '../components/SearchBox.astro';
+import { CATEGORIES, type CategorySlug } from '../lib/categories';
+import { getAllRecipes, getRecipeStats } from '../lib/recipes';
+
+const stats = getRecipeStats();
+const featured = getAllRecipes()
+  .filter((recipe) => recipe.coverImage)
+  .slice(0, 6);
+---
+
+<Layout title="首页" description="程序员做饭指南 — 清晰精准的家常菜谱，分类浏览与搜索">
+  <section class="hero">
+    <div class="container">
+      <h1>程序员做饭指南</h1>
+      <p class="hero-subtitle">
+        像写代码一样做饭 — 步骤清晰、用量精准、{stats.total} 道家常菜谱等你探索
+      </p>
+      <SearchBox />
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2 class="section-title">🗂️ 按分类浏览</h2>
+    <div class="grid grid-categories">
+      {(Object.keys(CATEGORIES) as CategorySlug[]).map((slug) => {
+        const count = stats.byCategory.find((item) => item.slug === slug)?.count ?? 0;
+        return <CategoryCard slug={slug} count={count} />;
+      })}
+    </div>
+  </section>
+
+  {featured.length > 0 && (
+    <section class="container section">
+      <h2 class="section-title">✨ 精选菜谱</h2>
+      <div class="grid grid-recipes">
+        {featured.map((recipe) => (
+          <RecipeCard recipe={recipe} />
+        ))}
+      </div>
+      <p class="section-more">
+        <a href="/recipes">查看全部菜谱 →</a>
+      </p>
+    </section>
+  )}
+</Layout>
+
+<style>
+  .hero {
+    padding: 4rem 0 3rem;
+    text-align: center;
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-primary) 6%, var(--color-bg)) 0%,
+      var(--color-bg) 100%
+    );
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subtitle {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    max-width: 520px;
+    margin: 0 auto 2rem;
+  }
+
+  .section {
+    padding-bottom: 2rem;
+  }
+
+  .section-more {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .section-more a {
+    font-weight: 500;
+  }
+</style>

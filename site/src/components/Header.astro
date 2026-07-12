@@ -1,0 +1,133 @@
+---
+const navLinks = [
+  { href: '/', label: '首页' },
+  { href: '/recipes', label: '全部菜谱' },
+  { href: '/tips', label: '烹饪技巧' },
+  { href: '/search', label: '搜索' },
+];
+---
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">🍳</span>
+      <span class="logo-text">程序员做饭指南</span>
+    </a>
+
+    <nav class="nav">
+      {navLinks.map((link) => (
+        <a href={link.href} class="nav-link">
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="切换深色模式">
+      <span class="theme-icon-light">☀️</span>
+      <span class="theme-icon-dark">🌙</span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  toggle?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme') || 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+</script>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: var(--header-height);
+    background: color-mix(in srgb, var(--color-bg-elevated) 92%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 1rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text);
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.05rem;
+    white-space: nowrap;
+  }
+
+  .logo:hover {
+    color: var(--color-primary);
+  }
+
+  .logo-icon {
+    font-size: 1.35rem;
+  }
+
+  .nav {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  .nav-link {
+    padding: 0.45rem 0.85rem;
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .nav-link:hover {
+    color: var(--color-primary);
+    background: var(--color-bg-muted);
+  }
+
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-bg-elevated);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.2s;
+  }
+
+  .theme-toggle:hover {
+    background: var(--color-bg-muted);
+  }
+
+  [data-theme='light'] .theme-icon-dark,
+  [data-theme='dark'] .theme-icon-light {
+    display: none;
+  }
+
+  @media (max-width: 720px) {
+    .logo-text {
+      display: none;
+    }
+
+    .nav-link {
+      padding: 0.4rem 0.55rem;
+      font-size: 0.82rem;
+    }
+  }
+</style>

@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAllTips, getTipBySlug } from '../../lib/tips';
+
+export function getStaticPaths() {
+  return getAllTips().map((tip) => ({
+    params: { slug: tip.slug },
+  }));
+}
+
+const { slug } = Astro.props;
+const tip = getTipBySlug(slug);
+
+if (!tip) {
+  return Astro.redirect('/tips');
+}
+---
+
+<Layout title={tip.title} description={`${tip.groupTitle} — ${tip.title}`}>
+  <article class="container tip-page">
+    <nav class="breadcrumb">
+      <a href="/">首页</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="/tips">烹饪技巧</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>{tip.title}</span>
+    </nav>
+
+    <header class="page-header">
+      <span class="badge badge-primary">{tip.groupTitle}</span>
+      <h1>{tip.title}</h1>
+    </header>
+
+    <div class="prose" set:html={tip.contentHtml} />
+  </article>
+</Layout>
+
+<style>
+  .tip-page {
+    padding-bottom: 3rem;
+  }
+
+  .tip-page .page-header {
+    padding-top: 1rem;
+  }
+</style>

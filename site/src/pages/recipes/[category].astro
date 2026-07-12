@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+import { CATEGORIES, type CategorySlug } from '../../lib/categories';
+import { getRecipesByCategory } from '../../lib/recipes';
+
+export function getStaticPaths() {
+  return (Object.keys(CATEGORIES) as CategorySlug[]).map((category) => ({
+    params: { category },
+  }));
+}
+
+const { category } = Astro.params as { category: CategorySlug };
+const categoryInfo = CATEGORIES[category];
+const recipes = getRecipesByCategory(category);
+---
+
+<Layout title={categoryInfo.title} description={`${categoryInfo.title}菜谱列表`}>
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/">首页</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="/recipes">全部菜谱</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>{categoryInfo.title}</span>
+    </nav>
+
+    <header class="page-header">
+      <h1>{categoryInfo.icon} {categoryInfo.title}</h1>
+      <p>共 {recipes.length} 道菜</p>
+    </header>
+
+    {recipes.length > 0 ? (
+      <div class="grid grid-recipes">
+        {recipes.map((recipe) => (
+          <RecipeCard recipe={recipe} />
+        ))}
+      </div>
+    ) : (
+      <div class="empty-state">该分类暂无菜谱</div>
+    )}
+  </div>
+</Layout>

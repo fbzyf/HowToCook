@@ -1,0 +1,51 @@
+---
+import { CATEGORIES, type CategorySlug } from '../lib/categories';
+
+interface Props {
+  slug: CategorySlug;
+  count: number;
+}
+
+const { slug, count } = Astro.props;
+const category = CATEGORIES[slug];
+---
+
+<a href={`/recipes/${slug}`} class="category-card card">
+  <span class="category-icon">{category.icon}</span>
+  <span class="category-title">{category.title}</span>
+  <span class="category-count">{count} 道菜</span>
+</a>
+
+<style>
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: inherit;
+    min-height: 130px;
+  }
+
+  .category-card:hover {
+    color: inherit;
+    border-color: var(--color-primary);
+  }
+
+  .category-icon {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .category-count {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+</style>

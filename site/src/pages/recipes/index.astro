@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CategoryCard from '../../components/CategoryCard.astro';
+import { CATEGORIES, type CategorySlug } from '../../lib/categories';
+import { getRecipeStats } from '../../lib/recipes';
+
+const stats = getRecipeStats();
+---
+
+<Layout title="全部菜谱" description="浏览全部菜谱分类">
+  <div class="container">
+    <header class="page-header">
+      <h1>全部菜谱</h1>
+      <p>共 {stats.total} 道菜，按分类浏览</p>
+    </header>
+
+    <div class="grid grid-categories">
+      {(Object.keys(CATEGORIES) as CategorySlug[]).map((slug) => {
+        const count = stats.byCategory.find((item) => item.slug === slug)?.count ?? 0;
+        return <CategoryCard slug={slug} count={count} />;
+      })}
+    </div>
+  </div>
+</Layout>
