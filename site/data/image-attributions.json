@@ -1,0 +1,1402 @@
+[
+  {
+    "recipe": "咖喱炒蟹",
+    "file": "dishes/aquatic/咖喱炒蟹.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/4590883999",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "响油鳝丝",
+    "file": "dishes/aquatic/响油鳝丝.jpg",
+    "source": "https://www.flickr.com/photos/87117631@N00/8491553038",
+    "creator": "Gary Soup",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "微波葱姜黑鳕鱼",
+    "file": "dishes/aquatic/微波葱姜黑鳕鱼.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "水煮鱼",
+    "file": "dishes/aquatic/水煮鱼.jpg",
+    "source": "https://www.flickr.com/photos/16105436@N00/15180056613",
+    "creator": "Kai Hendry",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "清蒸生蚝",
+    "file": "dishes/aquatic/清蒸生蚝.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/313854298",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "吐司果酱",
+    "file": "dishes/breakfast/吐司果酱.jpg",
+    "source": "https://www.flickr.com/photos/61056459@N05/6212828510",
+    "creator": "KFoodaddict",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "太阳蛋",
+    "file": "dishes/breakfast/太阳蛋.jpg",
+    "source": "https://www.flickr.com/photos/67839741@N06/12951087713",
+    "creator": "L.A. Foodie",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "微波炉荷包蛋",
+    "file": "dishes/breakfast/微波炉荷包蛋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "微波炉蒸蛋",
+    "file": "dishes/breakfast/微波炉蒸蛋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "微波炉蛋糕",
+    "file": "dishes/breakfast/微波炉蛋糕.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "意式香肠北非蛋",
+    "file": "dishes/breakfast/意式香肠北非蛋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "手抓饼",
+    "file": "dishes/breakfast/手抓饼.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2299404081",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "桂圆红枣粥",
+    "file": "dishes/breakfast/桂圆红枣粥.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "水煮玉米",
+    "file": "dishes/breakfast/水煮玉米.jpg",
+    "source": "https://www.flickr.com/photos/48889109669@N01/29192177",
+    "creator": "abon",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "温泉蛋",
+    "file": "dishes/breakfast/温泉蛋/温泉蛋.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=49909944",
+    "creator": "Banej",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "recipe": "溏心蛋",
+    "file": "dishes/breakfast/溏心蛋.jpg",
+    "source": "https://www.flickr.com/photos/45040421@N06/12727977463",
+    "creator": "jlodder",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "煎饺",
+    "file": "dishes/breakfast/煎饺.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/3522093550",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "燕麦鸡蛋饼",
+    "file": "dishes/breakfast/燕麦鸡蛋饼.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "牛奶燕麦",
+    "file": "dishes/breakfast/牛奶燕麦.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "空气炸锅面包片",
+    "file": "dishes/breakfast/空气炸锅面包片.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "美式炒蛋",
+    "file": "dishes/breakfast/美式炒蛋.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2409085893",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "茶叶蛋",
+    "file": "dishes/breakfast/茶叶蛋.jpg",
+    "source": "https://www.flickr.com/photos/22251370@N02/3955742663",
+    "creator": "marc kjerland",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蒸水蛋",
+    "file": "dishes/breakfast/蒸水蛋.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2633883",
+    "creator": "Tam3415 from (optional)",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蒸花卷",
+    "file": "dishes/breakfast/蒸花卷.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=173803769",
+    "creator": "Alpha from Melbourne, Australia",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蛋煎糍粑",
+    "file": "dishes/breakfast/蛋煎糍粑.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "金枪鱼酱三明治",
+    "file": "dishes/breakfast/金枪鱼酱三明治.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "韩国麻药鸡蛋",
+    "file": "dishes/breakfast/韩国麻药鸡蛋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "鸡蛋三明治",
+    "file": "dishes/breakfast/鸡蛋三明治.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=129043218",
+    "creator": "Solomon203",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "recipe": "油酥",
+    "file": "dishes/condiment/油酥.jpg",
+    "source": "https://www.flickr.com/photos/91049143@N00/16230307437",
+    "creator": "bryan...",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "炸串酱料",
+    "file": "dishes/condiment/炸串酱料.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "简易版炒糖色",
+    "file": "dishes/condiment/简易版炒糖色.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "糖醋汁",
+    "file": "dishes/condiment/糖醋汁.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=85522668",
+    "creator": "董辰兴",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "recipe": "葱油",
+    "file": "dishes/condiment/葱油.jpg",
+    "source": "https://www.flickr.com/photos/68147320@N02/8371912337",
+    "creator": "T.Tseng",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "蒜香酱油",
+    "file": "dishes/condiment/蒜香酱油.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "奥利奥冰淇淋",
+    "file": "dishes/dessert/奥利奥冰淇淋/奥利奥冰淇淋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "红柚蛋糕",
+    "file": "dishes/dessert/红柚蛋糕/红柚蛋糕.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "胡萝卜甜糕",
+    "file": "dishes/dessert/胡萝卜甜糕.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "草莓冰淇淋",
+    "file": "dishes/dessert/草莓冰淇淋/草莓冰淇淋.jpg",
+    "source": "https://www.flickr.com/photos/93256925@N00/6880742756",
+    "creator": "bangdoll@flickr",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "魔芋蛋糕",
+    "file": "dishes/dessert/魔芋蛋糕/魔芋蛋糕.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "B52轰炸机",
+    "file": "dishes/drink/B52轰炸机.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "Mojito莫吉托",
+    "file": "dishes/drink/Mojito莫吉托.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "冬瓜茶",
+    "file": "dishes/drink/冬瓜茶.jpg",
+    "source": "https://www.flickr.com/photos/9494319@N08/2388930926",
+    "creator": "竹筍弟弟",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "印度奶茶",
+    "file": "dishes/drink/印度奶茶.jpg",
+    "source": "https://www.flickr.com/photos/91049143@N00/18099262078",
+    "creator": "bryan...",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "可乐桶",
+    "file": "dishes/drink/可乐桶.jpg",
+    "source": "https://www.flickr.com/photos/81073741@N00/9598874980",
+    "creator": "lightstars",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "奶茶",
+    "file": "dishes/drink/奶茶.jpg",
+    "source": "https://www.flickr.com/photos/97247234@N00/5296600729",
+    "creator": "Dennis Wong",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "杨枝甘露",
+    "file": "dishes/drink/杨枝甘露.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=119847522",
+    "creator": "彩色琪子",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "recipe": "牛油果拉西",
+    "file": "dishes/drink/牛油果拉西.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "酸梅汤（半成品加工）",
+    "file": "dishes/drink/酸梅汤（半成品加工）.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "长岛冰茶",
+    "file": "dishes/drink/长岛冰茶.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "乡村啤酒鸭",
+    "file": "dishes/meat_dish/乡村啤酒鸭.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "冷吃兔",
+    "file": "dishes/meat_dish/冷吃兔.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "可乐鸡翅",
+    "file": "dishes/meat_dish/可乐鸡翅.jpg",
+    "source": "https://www.flickr.com/photos/48524258@N00/10121335634",
+    "creator": "rjw1",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "咕噜肉",
+    "file": "dishes/meat_dish/咕噜肉.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=79990386",
+    "creator": "Walter Grassroot",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "recipe": "商芝肉",
+    "file": "dishes/meat_dish/商芝肉.jpg",
+    "source": "https://www.flickr.com/photos/35493696@N02/5058963833",
+    "creator": "hide10",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "姜葱捞鸡",
+    "file": "dishes/meat_dish/姜葱捞鸡/姜葱捞鸡.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "孜然牛肉",
+    "file": "dishes/meat_dish/孜然牛肉.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2267771859",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "小炒肉",
+    "file": "dishes/meat_dish/小炒肉.jpg",
+    "source": "https://www.flickr.com/photos/8662972@N04/5842367235",
+    "creator": "Singzy",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "小米辣炒肉",
+    "file": "dishes/meat_dish/小米辣炒肉.jpg",
+    "source": "https://www.flickr.com/photos/56043603@N00/12965512053",
+    "creator": "lukehsu0327",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "小酥肉",
+    "file": "dishes/meat_dish/小酥肉.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=172371377",
+    "creator": "Suginami",
+    "license": "cc0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/"
+  },
+  {
+    "recipe": "尖椒炒牛肉",
+    "file": "dishes/meat_dish/尖椒炒牛肉.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "山西过油肉",
+    "file": "dishes/meat_dish/山西过油肉.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "带把肘子",
+    "file": "dishes/meat_dish/带把肘子.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "意式烤鸡",
+    "file": "dishes/meat_dish/意式烤鸡.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "杀猪菜",
+    "file": "dishes/meat_dish/杀猪菜.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "枝竹羊腩煲",
+    "file": "dishes/meat_dish/枝竹羊腩煲/枝竹羊腩煲.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=31651728",
+    "creator": "Cinnlsadlawmo",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "recipe": "椒盐排条",
+    "file": "dishes/meat_dish/椒盐排条.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "水煮肉片",
+    "file": "dishes/meat_dish/水煮肉片.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=30229031",
+    "creator": "zhantongz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "recipe": "洋葱炒猪肉",
+    "file": "dishes/meat_dish/洋葱炒猪肉.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "烤鸡翅",
+    "file": "dishes/meat_dish/烤鸡翅.jpg",
+    "source": "https://www.flickr.com/photos/23206546@N04/8162059834",
+    "creator": "Rusty Clark ~ 100K Photos",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "煎烤羊排",
+    "file": "dishes/meat_dish/煎烤羊排/煎烤羊排.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "猪肉烩酸菜",
+    "file": "dishes/meat_dish/猪肉烩酸菜.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "甜辣烤全翅",
+    "file": "dishes/meat_dish/甜辣烤全翅.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "番茄红酱",
+    "file": "dishes/meat_dish/番茄红酱.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "白菜猪肉炖粉条",
+    "file": "dishes/meat_dish/白菜猪肉炖粉条.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "粉蒸肉",
+    "file": "dishes/meat_dish/粉蒸肉.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2426657413",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "糖醋里脊",
+    "file": "dishes/meat_dish/糖醋里脊.jpg",
+    "source": "https://www.flickr.com/photos/69024001@N00/78936610",
+    "creator": "ndrwfgg",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "红烧鸡翅",
+    "file": "dishes/meat_dish/红烧鸡翅.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=42193386",
+    "creator": "N509FZ",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "recipe": "肉饼炖蛋",
+    "file": "dishes/meat_dish/肉饼炖蛋.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2705560486",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "腐乳肉",
+    "file": "dishes/meat_dish/腐乳肉.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/3455097264",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "萝卜炖羊排",
+    "file": "dishes/meat_dish/萝卜炖羊排.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "葱烧鸡腿",
+    "file": "dishes/meat_dish/葱烧鸡腿.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蒜苔炒肉末",
+    "file": "dishes/meat_dish/蒜苔炒肉末.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "虎皮肘子",
+    "file": "dishes/meat_dish/虎皮肘子.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蚂蚁上树",
+    "file": "dishes/meat_dish/蚂蚁上树.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=26661291",
+    "creator": "Дмитрий Журавлев (dejur)",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "recipe": "西红柿牛腩",
+    "file": "dishes/meat_dish/西红柿牛腩/西红柿牛腩.jpg",
+    "source": "https://www.flickr.com/photos/35468144810@N01/4228116293",
+    "creator": "Girl Interrupted Eating",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "豉汁排骨",
+    "file": "dishes/meat_dish/豉汁排骨.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=7343138",
+    "creator": "Mcmcsumg",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "recipe": "辣椒炒肉",
+    "file": "dishes/meat_dish/辣椒炒肉.jpg",
+    "source": "https://www.flickr.com/photos/56043603@N00/12965512053",
+    "creator": "lukehsu0327",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "香干肉丝",
+    "file": "dishes/meat_dish/香干肉丝.jpg",
+    "source": "https://www.flickr.com/photos/7656598@N04/2847095843",
+    "creator": "DING *_^",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "鱼香肉丝",
+    "file": "dishes/meat_dish/鱼香肉丝.png",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=117024470",
+    "creator": "Wr120galen",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "recipe": "麻辣香锅",
+    "file": "dishes/meat_dish/麻辣香锅.jpg",
+    "source": "https://www.flickr.com/photos/47096663@N06/9346740703",
+    "creator": "RRRRRRLee",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "黄油鸡",
+    "file": "dishes/meat_dish/黄油鸡.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/3130197778",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "黄焖鸡",
+    "file": "dishes/meat_dish/黄焖鸡.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=67526704",
+    "creator": "汮汐",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "recipe": "黄瓜炒肉",
+    "file": "dishes/meat_dish/黄瓜炒肉.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "凉皮",
+    "file": "dishes/semi-finished/凉皮.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=40033111",
+    "creator": "Steetsweet",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "recipe": "半成品意面",
+    "file": "dishes/semi-finished/半成品意面.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=116854021",
+    "creator": "創作者：林永琳。貢獻者：林永琳",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/tw/deed.en/"
+  },
+  {
+    "recipe": "牛油火锅底料",
+    "file": "dishes/semi-finished/牛油火锅底料.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "速冻水饺",
+    "file": "dishes/semi-finished/速冻水饺.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "速冻馄饨",
+    "file": "dishes/semi-finished/速冻馄饨.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "奶油蘑菇汤",
+    "file": "dishes/soup/奶油蘑菇汤.jpg",
+    "source": "https://www.flickr.com/photos/32300607@N05/4258569499",
+    "creator": "jerryluo0520",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "小米粥",
+    "file": "dishes/soup/小米粥.jpg",
+    "source": "https://www.flickr.com/photos/76958594@N04/7356102222",
+    "creator": "D11xzj",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "排骨山药玉米汤",
+    "file": "dishes/soup/排骨山药玉米汤/排骨山药玉米汤.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "排骨苦瓜汤",
+    "file": "dishes/soup/排骨苦瓜汤/排骨苦瓜汤.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "生汆丸子汤",
+    "file": "dishes/soup/生汆丸子汤.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "番茄牛肉蛋花汤",
+    "file": "dishes/soup/番茄牛肉蛋花汤.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "皮蛋瘦肉粥",
+    "file": "dishes/soup/皮蛋瘦肉粥.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/3335172982",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "米粥",
+    "file": "dishes/soup/米粥.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=154065182",
+    "creator": "Vian Chen",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "recipe": "紫菜蛋花汤",
+    "file": "dishes/soup/紫菜蛋花汤.jpg",
+    "source": "https://www.flickr.com/photos/76958594@N04/7762437314",
+    "creator": "D11xzj",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "罗宋汤",
+    "file": "dishes/soup/罗宋汤.jpg",
+    "source": "https://www.flickr.com/photos/28560937@N05/6068835301",
+    "creator": "Shafiu Hussain",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "腊八粥",
+    "file": "dishes/soup/腊八粥.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=16833791",
+    "creator": "Bugtiger",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "西红柿鸡蛋汤",
+    "file": "dishes/soup/西红柿鸡蛋汤.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2462987456",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "金针菇汤",
+    "file": "dishes/soup/金针菇汤.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "黄瓜皮蛋汤",
+    "file": "dishes/soup/黄瓜皮蛋汤.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "中式馅饼",
+    "file": "dishes/staple/中式馅饼/中式馅饼.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "利提巧卡",
+    "file": "dishes/staple/利提巧卡.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "印度烤饼",
+    "file": "dishes/staple/印度烤饼.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "印度焖饭",
+    "file": "dishes/staple/印度焖饭.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "可乐炒饭",
+    "file": "dishes/staple/可乐炒饭.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "咸肉菜饭",
+    "file": "dishes/staple/咸肉菜饭.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=36350627",
+    "creator": "上海道台",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "recipe": "手工水饺",
+    "file": "dishes/staple/手工水饺.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/4781072813",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "汤面",
+    "file": "dishes/staple/汤面.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/894126031",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "炒年糕",
+    "file": "dishes/staple/炒年糕.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/649330496",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "炒河粉",
+    "file": "dishes/staple/炒河粉.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2435637665",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "炒馍",
+    "file": "dishes/staple/炒馍.jpg",
+    "source": "https://www.flickr.com/photos/88718223@N00/13575672433",
+    "creator": "heiyo",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "炸酱面",
+    "file": "dishes/staple/炸酱面.jpg",
+    "source": "https://www.flickr.com/photos/22539273@N00/28802224344",
+    "creator": "*_*",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "热干面",
+    "file": "dishes/staple/热干面.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5283619",
+    "creator": "zh:user:Dice",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "recipe": "照烧鸡腿饭",
+    "file": "dishes/staple/照烧鸡腿饭.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "煮泡面加蛋",
+    "file": "dishes/staple/煮泡面加蛋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "猪油拌饭",
+    "file": "dishes/staple/猪油拌饭.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "红芸豆拌饭",
+    "file": "dishes/staple/红芸豆拌饭.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "老干妈拌面",
+    "file": "dishes/staple/老干妈拌面.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "肉蛋盖饭",
+    "file": "dishes/staple/肉蛋盖饭.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "葱油拌面",
+    "file": "dishes/staple/葱油拌面.jpg",
+    "source": "https://www.flickr.com/photos/25128194@N02/3994923610",
+    "creator": "Vegan Feast Catering",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "蒸卤面",
+    "file": "dishes/staple/蒸卤面.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蛋包饭",
+    "file": "dishes/staple/蛋包饭.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/3155759730",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蛋炒饭",
+    "file": "dishes/staple/蛋炒饭.jpg",
+    "source": "https://www.flickr.com/photos/40933543@N00/3177377867",
+    "creator": "fakelvis",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "螺蛳粉",
+    "file": "dishes/staple/螺蛳粉.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=147424247",
+    "creator": "TSAU Hauang Biahoar",
+    "license": "cc0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/"
+  },
+  {
+    "recipe": "豆角焖面",
+    "file": "dishes/staple/豆角焖面/豆角焖面.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "酸辣蕨根粉",
+    "file": "dishes/staple/酸辣蕨根粉.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "醪糟小汤圆",
+    "file": "dishes/staple/醪糟小汤圆.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=28003863",
+    "creator": "shizhao",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "韭菜盒子",
+    "file": "dishes/staple/韭菜盒子.jpg",
+    "source": "https://www.flickr.com/photos/75275041@N00/4037862047",
+    "creator": "livepine",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "鲜肉烧卖",
+    "file": "dishes/staple/鲜肉烧卖.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "鹰嘴豆炸饼",
+    "file": "dishes/staple/鹰嘴豆炸饼.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "麻油拌面",
+    "file": "dishes/staple/麻油拌面.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "麻辣减脂荞麦面",
+    "file": "dishes/staple/麻辣减脂荞麦面.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "凉拌油麦菜",
+    "file": "dishes/vegetable_dish/凉拌油麦菜.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "凉拌豆腐",
+    "file": "dishes/vegetable_dish/凉拌豆腐.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/76394568",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "凉拌金针菇",
+    "file": "dishes/vegetable_dish/凉拌金针菇.jpg",
+    "source": "https://www.flickr.com/photos/47038415@N00/219115984",
+    "creator": "Augapfel",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "凉拌黄瓜",
+    "file": "dishes/vegetable_dish/凉拌黄瓜.jpg",
+    "source": "https://www.flickr.com/photos/68147320@N02/48254054971",
+    "creator": "T.Tseng",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "印度土豆花菜",
+    "file": "dishes/vegetable_dish/印度土豆花菜.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "印度葫芦丸子",
+    "file": "dishes/vegetable_dish/印度葫芦丸子.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "家常日本豆腐",
+    "file": "dishes/vegetable_dish/家常日本豆腐.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "松仁玉米",
+    "file": "dishes/vegetable_dish/松仁玉米.jpg",
+    "source": "https://www.flickr.com/photos/47038415@N00/223727178",
+    "creator": "Augapfel",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "水油焖蔬菜",
+    "file": "dishes/vegetable_dish/水油焖蔬菜.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "油醋爆蛋",
+    "file": "dishes/vegetable_dish/油醋爆蛋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "清炒花菜",
+    "file": "dishes/vegetable_dish/清炒花菜.jpg",
+    "source": "https://www.flickr.com/photos/129701973@N03/21106190936",
+    "creator": "卡市達創業加油站",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "清蒸南瓜",
+    "file": "dishes/vegetable_dish/清蒸南瓜.jpg",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=63251389",
+    "creator": "dennis",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "炒茄子",
+    "file": "dishes/vegetable_dish/炒茄子.jpg",
+    "source": "https://www.flickr.com/photos/193353181@N06/52128949723",
+    "creator": "midnightbreakfastcafe",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "炒青菜",
+    "file": "dishes/vegetable_dish/炒青菜.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2403232046",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "皮蛋豆腐",
+    "file": "dishes/vegetable_dish/皮蛋豆腐.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/4189338981",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "素炒豆角",
+    "file": "dishes/vegetable_dish/素炒豆角.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "红烧茄子",
+    "file": "dishes/vegetable_dish/红烧茄子.jpg",
+    "source": "https://www.flickr.com/photos/49215102@N00/388853773",
+    "creator": "goodiesfirst",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "脆皮豆腐",
+    "file": "dishes/vegetable_dish/脆皮豆腐.jpg",
+    "source": "https://www.flickr.com/photos/47038415@N00/248296419",
+    "creator": "Augapfel",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "茄子炖土豆",
+    "file": "dishes/vegetable_dish/茄子炖土豆.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2403232046",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "葱煎豆腐",
+    "file": "dishes/vegetable_dish/葱煎豆腐.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/3199153760",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蒜蓉西兰花",
+    "file": "dishes/vegetable_dish/蒜蓉西兰花.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蒲烧茄子",
+    "file": "dishes/vegetable_dish/蒲烧茄子.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "蚝油生菜",
+    "file": "dishes/vegetable_dish/蚝油生菜.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "西红柿炒鸡蛋",
+    "file": "dishes/vegetable_dish/西红柿炒鸡蛋.jpg",
+    "source": "https://www.flickr.com/photos/71266843@N03/6449494637",
+    "creator": "C John Thompson",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "酸辣土豆丝",
+    "file": "dishes/vegetable_dish/酸辣土豆丝.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/521427464",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "金针菇日本豆腐煲",
+    "file": "dishes/vegetable_dish/金针菇日本豆腐煲.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "金钱蛋",
+    "file": "dishes/vegetable_dish/金钱蛋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "陕北熬豆角",
+    "file": "dishes/vegetable_dish/陕北熬豆角.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "雷椒皮蛋",
+    "file": "dishes/vegetable_dish/雷椒皮蛋.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "鸡蛋火腿炒黄瓜",
+    "file": "dishes/vegetable_dish/鸡蛋火腿炒黄瓜.jpg",
+    "source": "https://www.flickr.com/photos/95236086@N00/89236040",
+    "creator": "AndyArmstrong",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "鸡蛋花",
+    "file": "dishes/vegetable_dish/鸡蛋花/鸡蛋花.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/2704734055",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  }
+]

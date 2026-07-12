@@ -8,6 +8,7 @@
   },
   "scripts": {
     "prepare-images": "node scripts/prepare-images.mjs",
+    "fetch-images": "node scripts/fetch-missing-images.mjs",
     "dev": "npm run prepare-images && astro dev",
     "build": "npm run prepare-images && astro build",
     "preview": "astro preview",

@@ -99,6 +99,9 @@ npm run build:site
 **Q：图片不显示？**  
 A：菜谱图片放在与 `.md` 文件同目录下，用相对路径引用，例如 `![](./成品.jpg)`。构建时会自动复制到网站。
 
+**Q：没有图片的菜谱怎么办？**  
+A：可运行 `cd site && npm run fetch-images`，脚本会从 Openverse / Wikimedia 搜索 CC 协议图片，下载到菜谱目录并写入 Markdown。图片来源记录在 `site/data/image-attributions.json`。
+
 **Q：本地预览正常，GitHub Pages 样式错乱？**  
 A：GitHub Pages 项目站需要设置 `BASE_PATH`。部署工作流已配置为 `/HowToCook`，本地开发默认不需要。
 
