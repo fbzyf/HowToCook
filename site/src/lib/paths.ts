@@ -1,7 +1,12 @@
+function normalizeBase(base: string): string {
+  if (!base || base === '/') return '/';
+  return base.endsWith('/') ? base : `${base}/`;
+}
+
 export function withBase(path: string): string {
-  const base = import.meta.env.BASE_URL;
+  const base = normalizeBase(import.meta.env.BASE_URL);
   const clean = path.replace(/^\//, '');
-  return `${base}${clean}`;
+  return clean ? `${base}${clean}` : base;
 }
 
 export function withBasePath(path: string): string {
