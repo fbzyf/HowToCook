@@ -1398,5 +1398,13 @@
     "creator": "avlxyz",
     "license": "by-sa",
     "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "红烧鲳鱼",
+    "file": "dishes/aquatic/红烧鲳鱼.jpg",
+    "source": "https://www.flickr.com/photos/48973657@N00/8462783515",
+    "creator": "See-ming Lee (SML)",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
   }
 ]
