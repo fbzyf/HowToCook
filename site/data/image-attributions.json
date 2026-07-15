@@ -1406,5 +1406,45 @@
     "creator": "avlxyz",
     "license": "by-sa",
     "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "泰式绿咖喱鸡",
+    "file": "dishes/meat_dish/泰式绿咖喱鸡.jpg",
+    "source": "https://www.flickr.com/photos/43296902@N00/47505597011",
+    "creator": "Dennis S. Hurd",
+    "license": "cc0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  {
+    "recipe": "冬阴功虾汤",
+    "file": "dishes/soup/冬阴功虾汤.jpg",
+    "source": "https://www.flickr.com/photos/35034346243@N01/2110300408",
+    "creator": "stu_spivack",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "越南春卷",
+    "file": "dishes/vegetable_dish/越南春卷.jpg",
+    "source": "https://www.flickr.com/photos/30458313@N03/4254482711",
+    "creator": "DesheBoard",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  {
+    "recipe": "海南鸡饭",
+    "file": "dishes/staple/海南鸡饭.jpg",
+    "source": "https://www.flickr.com/photos/10559879@N00/256158484",
+    "creator": "avlxyz",
+    "license": "by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "recipe": "泰式芒果糯米饭",
+    "file": "dishes/dessert/泰式芒果糯米饭.jpg",
+    "source": "https://www.flickr.com/photos/13481788@N02/9644192133",
+    "creator": "daveiam",
+    "license": "by",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
   }
 ]
